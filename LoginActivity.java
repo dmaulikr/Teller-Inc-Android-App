@@ -66,7 +66,7 @@ import javax.net.ssl.HttpsURLConnection;
      String yohu = getIntent().getStringExtra("public_profile");
      LoginResult loginResult;
      static final String KEY_NAME = "name";
-     static final String pass = "e5199866598a11e2d8685b4788cb7d2cd3a6013d";
+     static final String pass = "";
      boolean isVerify;
 
 
@@ -86,11 +86,11 @@ import javax.net.ssl.HttpsURLConnection;
         password = (EditText) findViewById(R.id.password);
         imageViewy = (ImageView) findViewById(R.id.imageViewy);
         if (isVerify = true) {
-            if(password.getText().toString().equals("e5199866598a11e2d8685b4788cb7d2cd3a6013d")){
+            if(password.getText().toString().equals("")){
                 Intent intent = getIntent();
                 String yoh = KEY_NAME.toString();
                 intent.putExtra("name", yoh);
-                intent.putExtra("e5199866598a11e2d8685b4788cb7d2cd3a6013d", pass);
+                intent.putExtra("", pass);
                 Intent iwntent = new Intent(LoginActivity.this, ProfileActivity.class);
                 setResult(RESULT_OK, intent);
                 setResult(RESULT_OK, iwntent);
