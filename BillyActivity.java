@@ -1,18 +1,4 @@
-/**
- * Copyright 2014 AnjLab
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package com.teller.kwill.teller;
 
 import android.app.Activity;
@@ -48,12 +34,12 @@ public class BillyActivity extends Activity {
 	private static final String LOG_TAG = "iabv3";
 
     // PRODUCT & SUBSCRIPTION IDS
-    private static final String PRODUCT_ID = "tokens";
+    private static final String PRODUCT_ID = "";
     private static final String SUBSCRIPTION_ID = "com.anjlab.test.iab.subs1";
-    private static final String LICENSE_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy+ntKKEgLSRrnJuLun34T67X6JU+Y/FbnLg8BpHVkdGt2OtcbB7jhEaEsTdQWyadq6aaNMOgTU7M7LDPPkeG5hVwFwN3BgYK09W/jSdzpUTvA8MjLI9wcrmD3z5CXb5CaPbm2+s3IDg5fTWBTBM8mPPkpnccSBpg43WlREB4ni2R2WdVIwzvQ318T//jwzqfDV1AtKZs3gzNjZgRzRTGvPMGChdcNzzj0HSMtqyqukfBXgI7P9wevge/7OZN2ffKeHBbFcmweCG4ggn5YTWxARtkxFvZiIuuM8NagVNdEAJ+CL2y7Zz/5+D/7fZkJ23n4Jg2B49TrtloNJv0z4yS4wIDAQAB"; // PUT YOUR MERCHANT KEY HERE;
+    private static final String LICENSE_KEY = ""; // PUT YOUR MERCHANT KEY HERE;
     // put your Google merchant id here (as stated in public profile of your Payments Merchant Center)
     // if filled library will provide protection against Freedom alike Play Market simulators
-    private static final String MERCHANT_ID="09977507553486782142";
+    private static final String MERCHANT_ID="";
     Button productDetailsButton,button21,subscribeButton,purchaseButton,consumeButton;
     ImageButton imageButton;
     ImageView imageView4,imageView6,imageView7,imageView8,imageView5,imageView9b;
