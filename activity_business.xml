@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_business"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_facebook_button_border_color_focused"
+    tools:context="com.teller.kwill.teller.BusinessActivity">
+
+    <ScrollView
+        android:id="@+id/kjkn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollIndicators="right"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="20dp"
+        android:text="Answers"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColorLink="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textColorLink="@color/com_facebook_button_background_color_pressed"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView21"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+
+        android:layout_toStartOf="@+id/button31"
+        android:layout_below="@+id/imageView21" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignEnd="@+id/textView31"
+        android:clickable="true"
+        android:textColorLink="@drawable/com_facebook_button_like_background"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/textView21"
+        android:layout_below="@+id/textView41"
+        android:layout_marginTop="9dp"
+        android:textColorLink="@drawable/com_facebook_button_like_background"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lopx"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTexta" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/com_facebook_auth_dialog_header_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView61" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView21"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/textView61"
+        android:layout_below="@+id/textView61"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?android:attr/alertDialogIcon"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBottom="@+id/button41"
+        android:layout_alignEnd="@+id/button81" />
+
+    <Button
+        android:id="@+id/button41"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionModeShareDrawable"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_below="@+id/textView81"
+        android:layout_toEndOf="@+id/textView21" />
+
+    <EditText
+        android:id="@+id/editTexta"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView81"
+        android:layout_alignStart="@+id/textView61"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button81"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignTop="@+id/editTexta"
+        android:background="@drawable/com_facebook_tooltip_blue_topnub"
+        android:layout_toEndOf="@+id/editTexta" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTexta"
+        android:layout_marginStart="8dp"
+        android:layout_toStartOf="@+id/imageView21"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/textView41"
+        android:layout_below="@+id/textView81"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/ic_delete" />
+
+</RelativeLayout>
+

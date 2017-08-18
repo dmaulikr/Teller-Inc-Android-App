@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+    android:scrollIndicators="right"
+    tools:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/com_facebook_profile_picture_blank_square"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context=".BillyActivity">
+
+        <TextView
+            android:id="@+id/kkb"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/productIdTextView"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/purchaseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/ic_dialog_email"
+                android:backgroundTint="@color/com_facebook_button_background_color_focused_disabled"
+                android:onClick="onClick"
+                android:text="Purchase It" />
+
+            <Button
+                android:id="@+id/consumeButton"
+                android:layout_width="79dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/btn_star"
+                android:backgroundTint="@color/com_facebook_button_background_color"
+                android:onClick="onClick"
+                android:text="Get Tokens" />
+
+            <Button
+                android:id="@+id/productDetailsButton"
+                style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+                android:layout_width="40dp"
+                android:layout_height="57dp"
+                android:layout_weight="0.38"
+                android:background="@android:drawable/presence_video_away"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="0dp"
+                android:onClick="onClick"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText2u"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="send to"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="200dp"
+            android:layout_height="57dp"
+            android:background="@drawable/com_facebook_tooltip_blue_background"
+            android:visibility="visible"
+            app:srcCompat="@android:drawable/ic_secure" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="84dp"
+            android:layout_height="59dp"
+            android:layout_weight="0.28"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/me" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/com_facebook_tooltip_blue_topnub"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_weight="0.21"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/com_facebook_tooltip_blue_topnub" />
+
+        <TextView
+            android:id="@+id/subscriptionIdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:scrollIndicators="right"
+            android:scrollbars="vertical">
+
+            <Button
+                android:id="@+id/subscribeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/ic_menu_camera"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:onClick="onClick"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/star_on" />
+
+        <ImageView
+            android:id="@+id/imageView9b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/com_facebook_button_send_background"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/star_big_on" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    </LinearLayout>
+
+</ScrollView>

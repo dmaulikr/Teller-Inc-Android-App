@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    android:padding="20dp"
+    tools:context="com.teller.kwill.teller.SettingsActivity">
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button19"
+        android:layout_alignBottom="@+id/button19"
+        android:layout_gravity="top|left"
+        android:layout_toEndOf="@+id/textView9"
+        android:background="@color/com_facebook_button_background_color_selected"
+        android:text="Invite Friends"
+        app:layout_anchorGravity="bottom|right" />
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/com_facebook_button_send_background"
+        android:gravity="center"
+        android:text="Change Picture"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/com_facebook_button_send_background"
+        android:gravity="center"
+        android:text="Be Anonymous"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/njjob"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/com_facebook_button_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Report a Problem"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/njjo"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button18"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/com_facebook_button_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Privacy Policy"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button19"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="View Blocked"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:background="@drawable/com_facebook_button_background" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/com_facebook_button_send_background"
+        android:gravity="center"
+        android:text="Disallow Anonymity"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_below="@+id/textView14"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="@color/com_facebook_button_background_color_selected"
+        android:text="Blocked" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_below="@+id/textView105"
+        android:layout_marginTop="16dp"
+        android:background="@color/com_facebook_button_background_color_selected"
+        android:text="Picture" />
+
+    <ImageView
+        android:id="@+id/camera_preview"
+        android:layout_width="5dp"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/com_facebook_auth_dialog_header_background" />
+
+</RelativeLayout>

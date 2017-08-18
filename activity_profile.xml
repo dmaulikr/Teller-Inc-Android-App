@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context="com.teller.kwill.teller.ProfileActivity"
+    android:background="#03A9F4">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nnl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Successfully Logged In, Hello   "
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewprofile"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:background="@color/com_facebook_button_background_color_selected"
+        android:text="Logout" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textviewprofile"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="40dp"
+        android:buttonTint="@drawable/com_facebook_button_like_background"
+        android:checked="false"
+        android:text="Personal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioButton"
+        android:layout_below="@+id/radioButton"
+        android:layout_marginTop="82dp"
+        android:checked="false"
+        android:duplicateParentState="false"
+        android:text="Business"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:buttonTint="@drawable/com_facebook_button_login_background" />
+
+    <ListView
+        android:id="@+id/lkl"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioButton2"
+        android:layout_marginTop="14dp"
+        android:background="@color/com_facebook_device_auth_text"
+        android:clickable="true"
+        android:isScrollContainer="true"
+        android:scrollIndicators="right"
+        android:scrollbars="horizontal|vertical"
+        android:verticalScrollbarPosition="right" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="?android:attr/alertDialogIcon"
+        android:layout_alignBottom="@+id/lkl"
+        android:layout_alignEnd="@+id/radioButton"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/checkbox_on_background"
+        android:layout_alignBottom="@+id/lkl"
+        android:layout_toStartOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/lkl"
+        android:layout_toEndOf="@+id/radioButton2"
+        android:background="@drawable/com_facebook_tooltip_blue_xout" />
+
+    <SearchView
+        android:id="@+id/nnl"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="25dp" >
+
+
+
+    </SearchView>
+
+    <ImageView
+        android:id="@+id/noNetworkImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lkl"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/radioButton2"
+        android:visibility="invisible"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    <ImageView
+        android:id="@+id/noDataImg"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/nnl"
+        android:layout_alignTop="@+id/noNetworkImg"
+        android:visibility="invisible"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:background="@drawable/com_facebook_tooltip_blue_background"
+        android:layout_alignTop="@+id/button11"
+        android:layout_alignStart="@+id/noNetworkImg" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_marginTop="17dp"
+        android:layout_toStartOf="@+id/noNetworkImg"
+        android:background="@drawable/how" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button25"
+        android:layout_alignBottom="@+id/button25"
+        android:layout_toStartOf="@+id/noDataImg"
+        android:background="@android:drawable/btn_star_big_on" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button24"
+        android:layout_alignBottom="@+id/button24"
+        android:layout_alignStart="@+id/button11"
+        android:background="@android:drawable/ic_dialog_email" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button22"
+        android:layout_alignBottom="@+id/button22"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/button22"
+        android:background="@android:drawable/ic_menu_manage" />
+
+</RelativeLayout>
