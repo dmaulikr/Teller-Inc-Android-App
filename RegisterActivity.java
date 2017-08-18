@@ -49,7 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
     String Response;
     HttpResponse response ;
     static final String KEY_NAME = "name";
-    static final String pass = "e5199866598a11e2d8685b4788cb7d2cd3a6013d";
+    static final String pass = "";
     String NameHolder, EmailHolder, PasswordHolder ;
 
     Intent intent = getIntent();
@@ -68,11 +68,11 @@ public class RegisterActivity extends AppCompatActivity {
         email = (EditText)findViewById(R.id.email);
         password = (EditText)findViewById(R.id.password);
         if (isVerify = true) {
-            if(password.getText().toString().equals("e5199866598a11e2d8685b4788cb7d2cd3a6013d")){
+            if(password.getText().toString().equals("")){
                 Intent intent = getIntent();
                 String yoh = KEY_NAME.toString();
                 intent.putExtra("name", yoh);
-                intent.putExtra("e5199866598a11e2d8685b4788cb7d2cd3a6013d", pass);
+                intent.putExtra("", pass);
                 Intent iwntent = new Intent(RegisterActivity.this, LoginActivity.class);
                 setResult(RESULT_OK, intent);
                 setResult(RESULT_OK, iwntent);
